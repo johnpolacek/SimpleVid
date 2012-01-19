@@ -1,0 +1,130 @@
+body {
+    color: #333;
+    padding: 0;
+    margin: 0;
+	font-family: Georgia, serif;
+}
+
+#wrapper {
+    margin: 0 auto;
+    padding: 40px 40px 30px;
+    width: 75%;
+    text-align: center;
+}
+
+#container {
+	width: 90%;
+	background-color: #111;
+	margin: 0 auto;
+}
+
+/* Remove firefox dotted focus outline */
+a, a:hover, a:active, a:focus, object, embed {
+  outline: 0;
+}
+
+h1, h2, h3 {
+    margin: 5px 0;
+    padding: 0;
+}
+
+h1 a, h2 a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 20px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+a {
+    color: #222;
+}
+
+.demo {
+    border-top: dashed 1px #ccc;
+    border-bottom: dashed 1px #ccc;
+}
+
+.demo p {
+    padding: 20px;
+}
+
+.description {
+    margin: 30px 0;
+}
+
+.guide {
+    margin: 30px 0;
+}
+
+.parameters {
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+}
+
+blockquote {
+    margin: 10px 0;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+    border: solid 1px #ddd;
+}
+
+pre {
+    white-space: pre-wrap;       
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.download, .github, .authors {
+    margin: 40px 0 20px;
+    font-size: 14px;
+    font-style: italic;
+    
+}
+
+.download-link, .github-link, .author-link {
+    font-size: 18px;
+    padding: 10px;
+    color: #888;
+}
+
+.footer {
+    border-top: dashed 1px #ccc;
+    margin: 60px -30px 0;
+}
+
+.footer a, footer a:visited {
+    color: #bbb;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.footer a:hover {
+    color: #aaa;
+}
+
+@media screen and (max-width: 480px) {
+    
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+
+<head>
+	
+	<meta charset='utf-8'>
+	
+	<title>SimpleVids Plugin on GitHub</title>
+	
+	<meta name="title" content="jQuery SimpleVids Plugin">
+	<meta name="description" content="jQuery SimpleVids Plugin on Github, developed by John Polacek">
+	
+	<meta name="author" content="John Polacek">
+	
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	
+	<!-- Viewport setting for proper display on devices -->	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	
+</head>
+
+<body>
+	<a href="https://github.com/johnpolacek/SimpleVid">
+		<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+	</a>
+	
+	<div id="wrapper">
+		
+		<h1>
+			<a href="https://github.com/johnpolacek/SimpleVid">SimpleVid</a><br />
+		</h1>
+		<h2>by <a href="http://johnpolacek.github.com">johnpolacek</a></h2>
+		
+		<div class="description">
+			<h3>jQuery Plugin for Fluid Video</h3>
+			<p>In general, its best to use a service (YouTube, Vimeo, etc.) for hosting video, but sometimes this is&rsquo;t an option. SimpleVid provides for a free and easy way to host and embed your own fluid videos. Includes a flash fallback so you can encode once (as a baseline h.264 mp4) and play anywhere.</p>
+		</div>
+		
+		<div id="container">
+			<video id="myVideo" width="640" height="360" poster="img/poster.jpg" controls>
+				<source src="vid/video.mp4" type="video/mp4"  />
+			</video>
+		</div>
+		
+		<div class="guide">
+			<h4>How to Use</h4>
+			<p>Add video element to your html in a container div that scales with the size of the browser window.</p>
+			<p><blockquote><pre>
+&lt;div id="container"&gt;
+  &lt;video id="myVideo" width="640" height="360" poster="img/poster.jpg" controls&gt;
+    &lt;source src="vid/video.mp4" type="video/mp4"  /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;</pre></blockquote></p>
+			<p>First, link to jQuery and then to simplevid.js. Next, initialize the plugin and apply any custom settings to it. Last, use the plugin to target the video element(s) on the page.</p>
+			<p><blockquote><pre>
+&lt;script src="http://code.jquery.com/jquery-1.7.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/simplevid.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  var simplevid = new $.simplevid({
+    player: 'swf/vidobject.swf',
+    buttonColor: '#FFFFFF',
+    accentColor: '#BBBBBB',
+    backgroundColor: '#111111',
+    scaleVideo: true,
+    fullScreen: true
+  });
+  simplevid.embed("myVideo");
+&lt;/script&gt;</pre></blockquote></p>
+			
+			<p>Parameters are:</p>
+			<ul class="parameters">
+				<li><strong>player:</strong> path to vidobject.swf</li>
+				<li><strong>buttonColor:</strong> controls button color <small>(default: #ffffff)</small></li>
+				<li><strong>accentColor:</strong> controls accent color <small>(default #bbbbbb)</small></li>
+				<li><strong>backgroundColor:</strong> controls background color <small>(default: #111111)</small></li>
+				<li><strong>scaleVideo:</strong> set to false if you don't want the video to scale</li>
+				<li><strong>fullScreen:</strong> fullScreen: set to false to disable full screen mode </li>
+			</ul>
+		</div>
+		
+		<p class="download">
+			Download Plugin: 
+			<a class="download download-link" href="https://github.com/johnpolacek/ResponsiveVideo/zipball/master">zip</a>
+			<a class="download download-link" href="https://github.com/johnpolacek/ResponsiveVideo/tarball/master">tar</a>
+		</p>
+		
+		<p class="github">
+			Other stuff by me: 
+			<a class="github" href="http://johnpolacek.github.com">johnpolacek.github.com</a>
+		</p>
+		
+		<div class="footer">
+			<p>
+				<a href="http://twitter.com/johnpolacek">@johnpolacek</a>
+				<a href="http://johnpolacek.com">johnpolacek.com</a>
+			</p>
+		</div>
+	</div>
+	
+	
+	<!-- JavaScript -->
+	<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+	<script src="js/simplevid.js"></script>
+	<script>
+		var simplevid = new $.simplevid({
+			player: 'swf/vidobject.swf',
+			buttonColor: '#FFFFFF',
+			accentColor: '#BBBBBB',
+			backgroundColor: '#111111',
+			scaleVideo: true,
+			fullScreen: true
+		});
+		simplevid.embed("myVideo");
+	</script>
+	
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-2821890-9']);
+		_gaq.push(['_trackPageview']);
+		
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</body>
+</html>
