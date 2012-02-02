@@ -29,11 +29,11 @@
 		<h1>
 			<a href="https://github.com/johnpolacek/SimpleVid">SimpleVid</a><br />
 		</h1>
-		<h2>by <a href="http://johnpolacek.github.com">johnpolacek</a></h2>
+		<h2>by <a href="http://johnpolacek.github.com">johnpolacek</a> <br /><small><a href="http://twitter.com/johnpolacek">@johnpolacek</a></small></h2>
 		
 		<div class="description">
 			<h3>jQuery Plugin for Fluid Video</h3>
-			<p>In general, its best to use a service (YouTube, Vimeo, etc.) for hosting video, but sometimes this is&rsquo;t an option. SimpleVid provides for a free and easy way to host and embed your own fluid videos. Includes a flash fallback so you can encode once (as a baseline h.264 mp4) and play anywhere.</p>
+			<p>In general, it is best to use a service (YouTube, Vimeo, etc.) for hosting video, but sometimes this isn&rsquo;t an option. SimpleVid is a free and easy way to host and embed your own fluid videos. Uses flash to cover browsers that don&rsquo;t support h.264, so you can encode once (as a baseline h.264 mp4) and play anywhere.</p>
 		</div>
 		
 		<div id="container">
@@ -44,27 +44,27 @@
 		
 		<div class="guide">
 			<h4>How to Use</h4>
-			<p>Add video element to your html in a container div that scales with the size of the browser window.</p>
+			<p>Add video element to your html in a container div that scales the way you like.</p>
 			<p><blockquote><pre>
 &lt;div id="container"&gt;
-  &lt;video id="myVideo" width="640" height="360" poster="img/poster.jpg" controls&gt;
-    &lt;source src="vid/video.mp4" type="video/mp4"  /&gt;
-  &lt;/video&gt;
+    &lt;video id="myVideo" width="640" height="360" poster="img/poster.jpg" controls&gt;
+        &lt;source src="vid/video.mp4" type="video/mp4"  /&gt;
+    &lt;/video&gt;
 &lt;/div&gt;</pre></blockquote></p>
-			<p>First, link to jQuery and then to simplevid.js. Next, initialize the plugin and apply any custom settings to it. Last, use the plugin to target the video element(s) on the page.</p>
+			<p>First, link to jQuery and then simplevid.js. Next, initialize the plugin and apply any custom settings to it. Last, use the plugin to target the video element(s) on the page.</p>
 			<p><blockquote><pre>
 &lt;script src="http://code.jquery.com/jquery-1.7.min.js"&gt;&lt;/script&gt;
 &lt;script src="js/simplevid.js"&gt;&lt;/script&gt;
 &lt;script&gt;
-  var simplevid = new $.simplevid({
-    player: 'swf/vidobject.swf',
-    buttonColor: '#FFFFFF',
-    accentColor: '#BBBBBB',
-    backgroundColor: '#111111',
-    scaleVideo: true,
-    fullScreen: true
-  });
-  simplevid.embed("myVideo");
+    var simplevid = new $.simplevid({
+        player: 'swf/vidobject.swf',
+        buttonColor: '#FFFFFF',
+        accentColor: '#BBBBBB',
+        backgroundColor: '#111111',
+        scaleVideo: true,
+        fullScreen: true
+    });
+    simplevid.embed("myVideo");
 &lt;/script&gt;</pre></blockquote></p>
 			
 			<p>Parameters are:</p>
@@ -73,7 +73,7 @@
 				<li><strong>buttonColor:</strong> controls button color <small>(default: #ffffff)</small></li>
 				<li><strong>accentColor:</strong> controls accent color <small>(default #bbbbbb)</small></li>
 				<li><strong>backgroundColor:</strong> controls background color <small>(default: #111111)</small></li>
-				<li><strong>scaleVideo:</strong> set to false if you don't want the video to scale</li>
+				<li><strong>scaleVideo:</strong> set to false to disable video scaling</li>
 				<li><strong>fullScreen:</strong> fullScreen: set to false to disable full screen mode </li>
 			</ul>
 		</div>

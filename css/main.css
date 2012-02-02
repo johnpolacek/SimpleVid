@@ -40,6 +40,13 @@ h2 {
     font-size: 20px;
 }
 
+h2 small a {
+	color: #999;
+	font-style: italic;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
 h3 {
     font-size: 20px;
 	font-weight: normal;
@@ -92,14 +99,12 @@ pre {
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 .download, .github, .authors {
     margin: 40px 0 20px;
     font-size: 14px;
-    font-style: italic;
-    
+    font-style: italic;    
 }
 
 .download-link, .github-link, .author-link {
@@ -123,8 +128,4 @@ pre {
 
 .footer a:hover {
     color: #aaa;
-}
-
-@media screen and (max-width: 480px) {
-    
 }
