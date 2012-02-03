@@ -20,7 +20,7 @@ body {
 
 /* Remove firefox dotted focus outline */
 a, a:hover, a:active, a:focus, object, embed {
-  outline: 0;
+	outline: 0;
 }
 
 h1, h2, h3 {
@@ -42,7 +42,6 @@ h2 {
 
 h2 small a {
 	color: #999;
-	font-style: italic;
 	font-weight: normal;
 	text-decoration: underline;
 }
@@ -59,7 +58,8 @@ h4 {
 }
 
 a {
-    color: #222;
+    font-style: italic;
+	color: #222;
 }
 
 .demo {
@@ -101,6 +101,9 @@ pre {
     white-space: -o-pre-wrap;
 }
 
+.thanks {
+	margin: 80px 0 20px;
+}
 .download, .github, .authors {
     margin: 40px 0 20px;
     font-size: 14px;
@@ -121,7 +124,6 @@ pre {
 .footer a, footer a:visited {
     color: #bbb;
     font-size: 36px;
-    font-style: italic;
     line-height: 1.6;
     padding: 20px;
 }

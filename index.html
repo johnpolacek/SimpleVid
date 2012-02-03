@@ -33,7 +33,8 @@
 		
 		<div class="description">
 			<h3>jQuery Plugin for Fluid Video</h3>
-			<p>In general, it is best to use a service (YouTube, Vimeo, etc.) for hosting video, but sometimes this isn&rsquo;t an option. SimpleVid is a free and easy way to host and embed your own fluid videos. Uses flash to cover browsers that don&rsquo;t support h.264, so you can encode once (as a baseline h.264 mp4) and play anywhere.</p>
+			<p>Generally it is best to use services like YouTube, Vimeo or a CDN for hosting video, but sometimes it isn&rsquo;t an option. SimpleVid is a free and easy way to host and embed your own fluid videos. It uses flash to for browsers that don&rsquo;t support h.264, so you can encode once as a baseline h.264 mp4 and play anywhere.<br />
+			<small>(Try <a href="http://fitvidsjs.com/">FitVids.js</a> if your video is on YouTube, etc.)</small></p>
 		</div>
 		
 		<div id="container">
@@ -44,14 +45,14 @@
 		
 		<div class="guide">
 			<h4>How to Use</h4>
-			<p>Add video element to your html in a container div that scales the way you like.</p>
+			<p>Add video to your html in a container div styled to scale as you like.</p>
 			<p><blockquote><pre>
 &lt;div id="container"&gt;
     &lt;video id="myVideo" width="640" height="360" poster="img/poster.jpg" controls&gt;
         &lt;source src="vid/video.mp4" type="video/mp4"  /&gt;
     &lt;/video&gt;
 &lt;/div&gt;</pre></blockquote></p>
-			<p>First, link to jQuery and then simplevid.js. Next, initialize the plugin and apply any custom settings to it. Last, use the plugin to target the video element(s) on the page.</p>
+			<p>Link to jQuery and then simplevid.js. Then, initialize the plugin with the settings you want. Last, use the plugin to target video elements on the page.</p>
 			<p><blockquote><pre>
 &lt;script src="http://code.jquery.com/jquery-1.7.min.js"&gt;&lt;/script&gt;
 &lt;script src="js/simplevid.js"&gt;&lt;/script&gt;
@@ -82,6 +83,10 @@
 			Download Plugin: 
 			<a class="download download-link" href="https://github.com/johnpolacek/ResponsiveVideo/zipball/master">zip</a>
 			<a class="download download-link" href="https://github.com/johnpolacek/ResponsiveVideo/tarball/master">tar</a>
+		</p>
+		
+		<p class="thanks">
+			Thanks to <a href="http://code.google.com/p/swfobject/">swfobject.js</a> for some code, and <a href="http://chriscoyier.net/">Chris Coyier</a> for <a href="http://fitvidsjs.com/">inspiration</a>.
 		</p>
 		
 		<p class="github">
