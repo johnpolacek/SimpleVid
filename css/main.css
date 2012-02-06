@@ -131,3 +131,10 @@ pre {
 .footer a:hover {
     color: #aaa;
 }
+
+#resize-graphic {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	opacity: .6;
+}
