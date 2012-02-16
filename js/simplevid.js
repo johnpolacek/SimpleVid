@@ -72,7 +72,6 @@
 				vidContainers.push($(e.ref).parent());
 			} else {
 				// handle no flash
-				console.log($('#'+e.id));
 				vidElements.push($('#'+e.id));
 			}
 		}
